@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MR 2K AUTO CLEAN - Lavage automobile mobile à Lomé. Réservez votre lavage sans vous déplacer.">
+<title>MR 2K AUTO CLEAN — Réservation</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#17202a}
+.hero{background:linear-gradient(135deg,#111827,#26364a);color:white;padding:28px 18px 24px;text-align:center}
+.logo{font-weight:900;font-size:28px;letter-spacing:1px}.slogan{margin:8px 0 0;font-size:15px;opacity:.9}
+.container{max-width:620px;margin:0 auto;padding:16px}
+.card{background:#fff;border-radius:18px;padding:20px;margin:14px 0;box-shadow:0 6px 22px rgba(0,0,0,.07)}
+h2{margin:0 0 15px;font-size:21px} label{display:block;font-weight:700;margin:13px 0 6px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #d5dbe1;border-radius:10px;font-size:16px;background:#fff}
+textarea{min-height:80px;resize:vertical}
+.services{display:grid;grid-template-columns:1fr;gap:10px}.service{border:1px solid #dfe4e8;border-radius:12px;padding:13px}
+.service b{display:block}.price{font-weight:800;margin-top:4px}
+button{width:100%;border:0;border-radius:12px;padding:15px;font-size:17px;font-weight:800;cursor:pointer;background:#16a34a;color:white;margin-top:16px}
+button:hover{opacity:.92}.wa{display:block;text-align:center;text-decoration:none;background:#25D366;color:white;padding:13px;border-radius:12px;font-weight:800;margin-top:10px}
+.note{font-size:13px;color:#68737d;line-height:1.5}.success{display:none;background:#ecfdf3;border:1px solid #a7f3d0;color:#166534;padding:14px;border-radius:12px;margin-top:14px}
+.footer{text-align:center;padding:20px;color:#66717c;font-size:13px}
+.badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:6px 10px;border-radius:99px;font-size:12px;font-weight:700;margin-top:10px}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="logo">MR 2K AUTO CLEAN</div>
+  <div class="slogan">Votre voiture propre, sans vous déplacer.</div>
+  <div class="badge">Lavage automobile mobile — Lomé</div>
+</header>
+
+<main class="container">
+<section class="card">
+<h2>🚗 Réserver un lavage</h2>
+<p class="note">Remplissez le formulaire. Après l'envoi, nous vous contacterons sur WhatsApp pour confirmer le rendez-vous.</p>
+
+<form id="bookingForm">
+<label>Nom complet *</label>
+<input id="name" required placeholder="Ex. Kossi Christophe">
+
+<label>Numéro WhatsApp *</label>
+<input id="phone" required type="tel" placeholder="+228 XX XX XX XX">
+
+<label>Type de véhicule *</label>
+<select id="vehicle" required>
+<option value="">Choisir</option>
+<option>Voiture citadine</option>
+<option>Berline</option>
+<option>SUV / 4x4</option>
+<option>Pick-up</option>
+<option>Véhicule professionnel</option>
+</select>
+
+<label>Service souhaité *</label>
+<select id="service" required>
+<option value="">Choisir</option>
+<option value="Express — 2 000 F CFA">Express — 2 000 F CFA</option>
+<option value="Confort — 3 000 F CFA">Confort — 3 000 F CFA</option>
+<option value="Premium — 5 000 F CFA">Premium — 5 000 F CFA</option>
+<option value="Abonnement 4 lavages — 10 000 F CFA">Abonnement 4 lavages — 10 000 F CFA</option>
+</select>
+
+<label>Date souhaitée *</label>
+<input id="date" required type="date">
+
+<label>Heure souhaitée *</label>
+<input id="time" required type="time">
+
+<label>Quartier / zone *</label>
+<input id="area" required placeholder="Ex. Tokoin, Adidogomé...">
+
+<label>Adresse ou point de rendez-vous *</label>
+<textarea id="address" required placeholder="Indiquez l'endroit où nous devons venir."></textarea>
+
+<label>Message complémentaire</label>
+<textarea id="note" placeholder="Ex. véhicule très sale, besoin urgent..."></textarea>
+
+<button type="submit">📲 Envoyer ma demande</button>
+</form>
+<div id="success" class="success"></div>
+<a class="wa" href="https://wa.me/22898892605?text=Bonjour%20MR%202K%20AUTO%20CLEAN%2C%20je%20souhaite%20prendre%20rendez-vous%20pour%20un%20lavage." target="_blank">💬 Réserver directement sur WhatsApp</a>
+</section>
+
+<section class="card">
+<h2>💰 Nos tarifs</h2>
+<div class="services">
+<div class="service"><b>Express</b><span>Extérieur + vitres + pneus</span><div class="price">2 000 F CFA</div></div>
+<div class="service"><b>Confort</b><span>Extérieur + intérieur + tableau de bord + vitres + pneus</span><div class="price">3 000 F CFA</div></div>
+<div class="service"><b>Premium</b><span>Nettoyage approfondi</span><div class="price">5 000 F CFA</div></div>
+<div class="service"><b>Abonnement</b><span>4 lavages dans le mois</span><div class="price">10 000 F CFA</div></div>
+</div>
+</section>
+
+<section class="card">
+<h2>📞 Contact</h2>
+<p><strong>MR 2K AUTO CLEAN</strong><br>Lavage automobile mobile à Lomé.</p>
+<p>📱 <strong>+228 98 89 26 05</strong></p>
+<a class="wa" href="https://wa.me/22898892605" target="_blank">Ouvrir WhatsApp</a>
+</section>
+</main>
+
+<div class="footer">© 2026 MR 2K AUTO CLEAN — Votre voiture propre, sans vous déplacer.</div>
+
+<script>
+document.getElementById("date").min = new Date().toISOString().split("T")[0];
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const vehicle = document.getElementById("vehicle").value;
+  const service = document.getElementById("service").value;
+  const date = document.getElementById("date").value;
+  const time = document.getElementById("time").value;
+  const area = document.getElementById("area").value.trim();
+  const address = document.getElementById("address").value.trim();
+  const note = document.getElementById("note").value.trim();
+
+  const msg = `Bonjour MR 2K AUTO CLEAN 👋%0A%0AJe souhaite réserver un lavage.%0A%0A👤 Nom : ${encodeURIComponent(name)}%0A📱 WhatsApp : ${encodeURIComponent(phone)}%0A🚗 Véhicule : ${encodeURIComponent(vehicle)}%0A🧽 Service : ${encodeURIComponent(service)}%0A📅 Date : ${encodeURIComponent(date)}%0A⏰ Heure : ${encodeURIComponent(time)}%0A📍 Zone : ${encodeURIComponent(area)}%0A🏠 Adresse : ${encodeURIComponent(address)}%0A📝 Note : ${encodeURIComponent(note || "Aucune")}`;
+
+  const success = document.getElementById("success");
+  success.style.display = "block";
+  success.innerHTML = `✅ Demande préparée. <a href="https://wa.me/22898892605?text=${msg}" target="_blank">Cliquez ici pour envoyer la réservation sur WhatsApp.</a>`;
+  window.scrollTo({top:success.offsetTop-20,behavior:"smooth"});
+});
+</script>
+</body>
+</html>
